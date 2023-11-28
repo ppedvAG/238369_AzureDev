@@ -1,0 +1,29 @@
+﻿@page "/counter"
+@using Azure.Identity
+@using Azure.Security.KeyVault.Secrets
+
+
+
+<PageTitle>Counter</PageTitle>
+
+<h1>Counter</h1>
+
+<p role="status">Current count: @currentCount</p>
+<p role="status">Password: @pwd</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+@code {
+    private int currentCount = 0;
+    private string pwd = "";
+
+    private void IncrementCount()
+    {
+        currentCount++;
+
+        var client = new SecretClient(new Uri("https://andreskeys.vault.azure.net/"), new DefaultAzureCredential());
+
+        pwd = client.GetSecret("Passwort").Value.Value;
+
+    }
+}
