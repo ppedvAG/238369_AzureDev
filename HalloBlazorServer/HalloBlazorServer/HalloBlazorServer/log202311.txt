@@ -1181,3 +1181,53 @@ Content-Type: application/xml
 2023-11-28 12:34:10.918 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7132/_blazor/negotiate?negotiateVersion=1 - 0 - 200 316 application/json 55.5750ms
 2023-11-28 12:34:10.929 +01:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7132/_blazor?id=ND3Yb6UcE-C9rOwXKtB7kg - -
 2023-11-28 12:34:10.935 +01:00 [INF] Executing endpoint '/_blazor'
+2023-11-28 13:44:41.094 +01:00 [INF] User profile is available. Using 'C:\Users\Fred\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-11-28 13:44:41.499 +01:00 [INF] Now listening on: https://localhost:7132
+2023-11-28 13:44:41.507 +01:00 [INF] Now listening on: http://localhost:5072
+2023-11-28 13:44:41.518 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-28 13:44:41.526 +01:00 [INF] Hosting environment: Development
+2023-11-28 13:44:41.533 +01:00 [INF] Content root path: C:\Users\Fred\source\repos\ppedvAG\238369_AzureDev\HalloBlazorServer\HalloBlazorServer\HalloBlazorServer
+2023-11-28 13:44:45.328 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7132/ - -
+2023-11-28 13:44:45.477 +01:00 [INF] Executing endpoint '/_Host'
+2023-11-28 13:44:45.505 +01:00 [INF] Route matched with {page = "/_Host"}. Executing page /_Host
+2023-11-28 13:44:45.524 +01:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2023-11-28 13:44:45.530 +01:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2023-11-28 13:44:45.718 +01:00 [INF] Executed page /_Host in 204.304ms
+2023-11-28 13:44:45.724 +01:00 [INF] Executed endpoint '/_Host'
+2023-11-28 13:44:45.734 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7132/ - - - 200 - text/html;+charset=utf-8 408.6746ms
+2023-11-28 13:44:45.748 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7132/css/bootstrap/bootstrap.min.css - -
+2023-11-28 13:44:45.755 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7132/_framework/aspnetcore-browser-refresh.js - -
+2023-11-28 13:44:45.755 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7132/css/site.css - -
+2023-11-28 13:44:45.755 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7132/HalloBlazorServer.styles.css - -
+2023-11-28 13:44:45.755 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7132/_framework/blazor.server.js - -
+2023-11-28 13:44:45.764 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7132/_vs/browserLink - -
+2023-11-28 13:44:45.794 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7132/_framework/aspnetcore-browser-refresh.js - - - 200 13770 application/javascript;+charset=utf-8 39.0412ms
+2023-11-28 13:44:45.811 +01:00 [INF] The file /css/bootstrap/bootstrap.min.css was not modified
+2023-11-28 13:44:45.814 +01:00 [INF] The file /HalloBlazorServer.styles.css was not modified
+2023-11-28 13:44:45.814 +01:00 [INF] The file /_framework/blazor.server.js was not modified
+2023-11-28 13:44:45.829 +01:00 [INF] The file /css/site.css was not modified
+2023-11-28 13:44:45.833 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7132/css/bootstrap/bootstrap.min.css - - - 304 - text/css 84.5672ms
+2023-11-28 13:44:45.836 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7132/_framework/blazor.server.js - - - 304 - text/javascript 80.5461ms
+2023-11-28 13:44:45.836 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7132/HalloBlazorServer.styles.css - - - 304 - text/css 80.5408ms
+2023-11-28 13:44:45.843 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7132/css/site.css - - - 304 - text/css 87.9042ms
+2023-11-28 13:44:45.849 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7132/css/open-iconic/font/css/open-iconic-bootstrap.min.css - -
+2023-11-28 13:44:45.864 +01:00 [INF] The file /css/open-iconic/font/css/open-iconic-bootstrap.min.css was not modified
+2023-11-28 13:44:45.870 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7132/css/open-iconic/font/css/open-iconic-bootstrap.min.css - - - 304 - text/css 20.5285ms
+2023-11-28 13:44:45.881 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7132/_blazor/initializers - -
+2023-11-28 13:44:45.890 +01:00 [INF] Executing endpoint 'Blazor initializers'
+2023-11-28 13:44:45.916 +01:00 [INF] Executed endpoint 'Blazor initializers'
+2023-11-28 13:44:45.919 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7132/css/open-iconic/font/fonts/open-iconic.woff - -
+2023-11-28 13:44:45.923 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7132/_blazor/initializers - - - 200 - application/json;+charset=utf-8 41.5671ms
+2023-11-28 13:44:45.929 +01:00 [INF] The file /css/open-iconic/font/fonts/open-iconic.woff was not modified
+2023-11-28 13:44:45.936 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7132/css/open-iconic/font/fonts/open-iconic.woff - - - 304 - application/font-woff 16.1959ms
+2023-11-28 13:44:45.940 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7132/_blazor/negotiate?negotiateVersion=1 - 0
+2023-11-28 13:44:45.958 +01:00 [INF] Executing endpoint '/_blazor/negotiate'
+2023-11-28 13:44:45.962 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7132/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 198.0355ms
+2023-11-28 13:44:45.978 +01:00 [INF] Executed endpoint '/_blazor/negotiate'
+2023-11-28 13:44:45.983 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7132/_blazor/negotiate?negotiateVersion=1 - 0 - 200 316 application/json 43.0728ms
+2023-11-28 13:44:45.993 +01:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7132/_blazor?id=IOUbEga21LgZkC4IPDT9-Q - -
+2023-11-28 13:44:45.998 +01:00 [INF] Executing endpoint '/_blazor'
+2023-11-28 13:44:49.663 +01:00 [INF] Counter: 19
+2023-11-28 13:44:49.853 +01:00 [INF] Counter: 38
+2023-11-28 13:44:50.525 +01:00 [ERR] Schade: System.OutOfMemoryException: Insufficient memory to continue the execution of the program.
+   at HalloBlazorServer.Pages.Counter.MachEx() in C:\Users\Fred\source\repos\ppedvAG\238369_AzureDev\HalloBlazorServer\HalloBlazorServer\HalloBlazorServer\Pages\Counter.razor:line 57
