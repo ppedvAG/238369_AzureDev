@@ -11,6 +11,7 @@ builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
 
+
 Log.Logger = new LoggerConfiguration()
                     .WriteTo.File("log.txt", rollingInterval: RollingInterval.Month)
                     .WriteTo.ApplicationInsights(new TelemetryConfiguration("0b333280-ea27-4be6-b674-9a760934743a"), TelemetryConverter.Events)

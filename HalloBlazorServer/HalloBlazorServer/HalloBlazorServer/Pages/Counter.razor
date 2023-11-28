@@ -1,5 +1,8 @@
 ﻿@page "/counter"
+@using Azure.Storage.Blobs
+@using Azure.Storage.Queues
 @inject ILogger<Counter> logger
+@inject IConfiguration Configuration
 
 <PageTitle>Counter</PageTitle>
 
@@ -10,8 +13,42 @@
 <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
 <button class="btn btn-primary" @onclick="MachEx">Mach error</button>
 
+
+<button class="btn btn-primary" @onclick="UploadFile">Upload...</button>
+
+<input type="text" @bind-value="@txt" > 
+<button class="btn btn-primary" @onclick="SendMsg">Send msg</button>
+
+
+
 @code {
     private int currentCount = 0;
+    private string txt = "test120003";
+
+    private void SendMsg()
+    {
+        
+        var connectionString = Configuration.GetSection("AzureBlobStorage:ConnectionString").Value;
+
+        var client = new QueueClient(connectionString, "msgs");
+
+        client.SendMessage($"{txt} {DateTime.Now}");
+    }
+    private void UploadFile()
+    {
+        var filename = "TextFile.txt";
+
+        var connectionString = Configuration.GetSection("AzureBlobStorage:ConnectionString").Value;
+        var containerName = Configuration.GetSection("AzureBlobStorage:ContainerName").Value;
+
+        var client = new BlobServiceClient(connectionString);
+
+        var container = client.GetBlobContainerClient(containerName);
+
+        container.UploadBlob(filename, File.OpenRead(filename));
+
+    }
+
 
     private void MachEx()
     {
