@@ -10,7 +10,11 @@ namespace HalloBlazorServer.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=Books_dev;Trusted_Connection=true;");
+            var localConString = "Server=(localdb)\\mssqllocaldb;Database=Books_dev;Trusted_Connection=true;";
+            //var azureConstring = "Server=tcp:mydbserver666.database.windows.net,1433;Initial Catalog=mydb;Encrypt=True;TrustServerCertificate=False;Connection Timeout=10;Authentication='Active Directory Default'";
+            var azureConstring = "Server=tcp:mydbserver666.database.windows.net,1433;Initial Catalog=mydb;Persist Security Info=False;User ID=Wilma;Password=IhrPasswort123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+
+            optionsBuilder.UseSqlServer(azureConstring);
         }
 
     }
