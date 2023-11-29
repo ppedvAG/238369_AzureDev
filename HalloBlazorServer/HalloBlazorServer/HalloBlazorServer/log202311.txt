@@ -1231,3 +1231,93 @@ Content-Type: application/xml
 2023-11-28 13:44:49.853 +01:00 [INF] Counter: 38
 2023-11-28 13:44:50.525 +01:00 [ERR] Schade: System.OutOfMemoryException: Insufficient memory to continue the execution of the program.
    at HalloBlazorServer.Pages.Counter.MachEx() in C:\Users\Fred\source\repos\ppedvAG\238369_AzureDev\HalloBlazorServer\HalloBlazorServer\HalloBlazorServer\Pages\Counter.razor:line 57
+2023-11-29 09:50:17.774 +01:00 [INF] User profile is available. Using 'C:\Users\Fred\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-11-29 09:50:18.825 +01:00 [INF] Now listening on: https://localhost:7132
+2023-11-29 09:50:18.834 +01:00 [INF] Now listening on: http://localhost:5072
+2023-11-29 09:50:18.844 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-29 09:50:18.851 +01:00 [INF] Hosting environment: Development
+2023-11-29 09:50:18.858 +01:00 [INF] Content root path: C:\Users\Fred\source\repos\ppedvAG\238369_AzureDev\HalloBlazorServer\HalloBlazorServer\HalloBlazorServer
+2023-11-29 09:50:21.727 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7132/ - -
+2023-11-29 09:50:21.886 +01:00 [INF] Executing endpoint '/_Host'
+2023-11-29 09:50:21.947 +01:00 [INF] Route matched with {page = "/_Host"}. Executing page /_Host
+2023-11-29 09:50:21.964 +01:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2023-11-29 09:50:21.970 +01:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2023-11-29 09:50:22.146 +01:00 [INF] Executed page /_Host in 191.4704ms
+2023-11-29 09:50:22.151 +01:00 [INF] Executed endpoint '/_Host'
+2023-11-29 09:50:22.162 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7132/ - - - 200 - text/html;+charset=utf-8 436.6449ms
+2023-11-29 09:50:22.187 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7132/css/bootstrap/bootstrap.min.css - -
+2023-11-29 09:50:22.190 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7132/HalloBlazorServer.styles.css - -
+2023-11-29 09:50:22.190 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7132/css/site.css - -
+2023-11-29 09:50:22.218 +01:00 [INF] The file /css/bootstrap/bootstrap.min.css was not modified
+2023-11-29 09:50:22.218 +01:00 [INF] The file /HalloBlazorServer.styles.css was not modified
+2023-11-29 09:50:22.218 +01:00 [INF] The file /css/site.css was not modified
+2023-11-29 09:50:22.233 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7132/HalloBlazorServer.styles.css - - - 304 - text/css 42.1660ms
+2023-11-29 09:50:22.233 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7132/css/bootstrap/bootstrap.min.css - - - 304 - text/css 45.1022ms
+2023-11-29 09:50:22.233 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7132/css/site.css - - - 304 - text/css 42.1736ms
+2023-11-29 09:50:22.238 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7132/_framework/blazor.server.js - -
+2023-11-29 09:50:22.248 +01:00 [INF] The file /_framework/blazor.server.js was not modified
+2023-11-29 09:50:22.256 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7132/_framework/blazor.server.js - - - 304 - text/javascript 17.8074ms
+2023-11-29 09:50:22.256 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7132/css/open-iconic/font/css/open-iconic-bootstrap.min.css - -
+2023-11-29 09:50:22.257 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7132/_framework/aspnetcore-browser-refresh.js - -
+2023-11-29 09:50:22.267 +01:00 [INF] The file /css/open-iconic/font/css/open-iconic-bootstrap.min.css was not modified
+2023-11-29 09:50:22.267 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7132/_vs/browserLink - -
+2023-11-29 09:50:22.286 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7132/css/open-iconic/font/css/open-iconic-bootstrap.min.css - - - 304 - text/css 29.5496ms
+2023-11-29 09:50:22.296 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7132/_blazor/initializers - -
+2023-11-29 09:50:22.306 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7132/_framework/aspnetcore-browser-refresh.js - - - 200 13770 application/javascript;+charset=utf-8 49.0169ms
+2023-11-29 09:50:22.309 +01:00 [INF] Executing endpoint 'Blazor initializers'
+2023-11-29 09:50:22.330 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7132/css/open-iconic/font/fonts/open-iconic.woff - -
+2023-11-29 09:50:22.337 +01:00 [INF] The file /css/open-iconic/font/fonts/open-iconic.woff was not modified
+2023-11-29 09:50:22.342 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7132/css/open-iconic/font/fonts/open-iconic.woff - - - 304 - application/font-woff 11.9617ms
+2023-11-29 09:50:22.345 +01:00 [INF] Executed endpoint 'Blazor initializers'
+2023-11-29 09:50:22.353 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7132/_blazor/initializers - - - 200 - application/json;+charset=utf-8 57.0036ms
+2023-11-29 09:50:22.364 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7132/_blazor/negotiate?negotiateVersion=1 - 0
+2023-11-29 09:50:22.372 +01:00 [INF] Executing endpoint '/_blazor/negotiate'
+2023-11-29 09:50:22.412 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7132/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 144.0274ms
+2023-11-29 09:50:22.418 +01:00 [INF] Executed endpoint '/_blazor/negotiate'
+2023-11-29 09:50:22.424 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7132/_blazor/negotiate?negotiateVersion=1 - 0 - 200 316 application/json 59.7455ms
+2023-11-29 09:50:22.496 +01:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7132/_blazor?id=nMhTiT0H4CpILrqne5W9xg - -
+2023-11-29 09:50:22.501 +01:00 [INF] Executing endpoint '/_blazor'
+2023-11-29 09:50:41.039 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7132/books - -
+2023-11-29 09:50:41.051 +01:00 [INF] Executing endpoint '/_Host'
+2023-11-29 09:50:41.058 +01:00 [INF] Route matched with {page = "/_Host"}. Executing page /_Host
+2023-11-29 09:50:41.065 +01:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2023-11-29 09:50:41.071 +01:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2023-11-29 09:50:41.230 +01:00 [INF] Executed page /_Host in 166.2656ms
+2023-11-29 09:50:41.236 +01:00 [INF] Executed endpoint '/_Host'
+2023-11-29 09:50:41.241 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7132/books - - - 200 - text/html;+charset=utf-8 202.1441ms
+2023-11-29 09:50:41.270 +01:00 [INF] Executed endpoint '/_blazor'
+2023-11-29 09:50:41.278 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7132/css/bootstrap/bootstrap.min.css - -
+2023-11-29 09:50:41.281 +01:00 [INF] Request finished HTTP/2 CONNECT https://localhost:7132/_blazor?id=nMhTiT0H4CpILrqne5W9xg - - - 200 - - 18784.3352ms
+2023-11-29 09:50:41.284 +01:00 [INF] The file /css/bootstrap/bootstrap.min.css was not modified
+2023-11-29 09:50:41.285 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7132/css/site.css - -
+2023-11-29 09:50:41.285 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7132/HalloBlazorServer.styles.css - -
+2023-11-29 09:50:41.288 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7132/_framework/aspnetcore-browser-refresh.js - -
+2023-11-29 09:50:41.290 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7132/_framework/blazor.server.js - -
+2023-11-29 09:50:41.290 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7132/_vs/browserLink - -
+2023-11-29 09:50:41.294 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7132/css/bootstrap/bootstrap.min.css - - - 304 - text/css 16.2970ms
+2023-11-29 09:50:41.299 +01:00 [INF] The file /HalloBlazorServer.styles.css was not modified
+2023-11-29 09:50:41.303 +01:00 [INF] The file /_framework/blazor.server.js was not modified
+2023-11-29 09:50:41.308 +01:00 [INF] The file /css/site.css was not modified
+2023-11-29 09:50:41.318 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7132/HalloBlazorServer.styles.css - - - 304 - text/css 33.1861ms
+2023-11-29 09:50:41.318 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7132/_framework/blazor.server.js - - - 304 - text/javascript 28.4787ms
+2023-11-29 09:50:41.318 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7132/css/site.css - - - 304 - text/css 33.6505ms
+2023-11-29 09:50:41.323 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7132/_framework/aspnetcore-browser-refresh.js - - - 200 13770 application/javascript;+charset=utf-8 35.2418ms
+2023-11-29 09:50:41.332 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7132/css/open-iconic/font/css/open-iconic-bootstrap.min.css - -
+2023-11-29 09:50:41.342 +01:00 [INF] The file /css/open-iconic/font/css/open-iconic-bootstrap.min.css was not modified
+2023-11-29 09:50:41.348 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7132/css/open-iconic/font/css/open-iconic-bootstrap.min.css - - - 304 - text/css 15.8684ms
+2023-11-29 09:50:41.356 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7132/_blazor/initializers - -
+2023-11-29 09:50:41.360 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7132/css/open-iconic/font/fonts/open-iconic.woff - -
+2023-11-29 09:50:41.365 +01:00 [INF] Executing endpoint 'Blazor initializers'
+2023-11-29 09:50:41.372 +01:00 [INF] The file /css/open-iconic/font/fonts/open-iconic.woff was not modified
+2023-11-29 09:50:41.376 +01:00 [INF] Executed endpoint 'Blazor initializers'
+2023-11-29 09:50:41.382 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7132/css/open-iconic/font/fonts/open-iconic.woff - - - 304 - application/font-woff 20.6596ms
+2023-11-29 09:50:41.385 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7132/_blazor/initializers - - - 200 - application/json;+charset=utf-8 29.3007ms
+2023-11-29 09:50:41.400 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7132/_blazor/negotiate?negotiateVersion=1 - 0
+2023-11-29 09:50:41.409 +01:00 [INF] Executing endpoint '/_blazor/negotiate'
+2023-11-29 09:50:41.418 +01:00 [INF] Executed endpoint '/_blazor/negotiate'
+2023-11-29 09:50:41.427 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7132/_blazor/negotiate?negotiateVersion=1 - 0 - 200 316 application/json 27.2068ms
+2023-11-29 09:50:41.436 +01:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7132/_blazor?id=jr_Sw_WTF9r_hWZZj4Yp0Q - -
+2023-11-29 09:50:41.444 +01:00 [INF] Executing endpoint '/_blazor'
+2023-11-29 09:50:41.450 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7132/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 160.1483ms
+2023-11-29 09:51:01.693 +01:00 [INF] Executed endpoint '/_blazor'
+2023-11-29 09:51:01.698 +01:00 [INF] Request finished HTTP/2 CONNECT https://localhost:7132/_blazor?id=jr_Sw_WTF9r_hWZZj4Yp0Q - - - 200 - - 20262.2995ms

@@ -1,0 +1,78 @@
+﻿@page "/books"
+@using HalloBlazorServer.Data
+@using HalloBlazorServer.Model
+
+<PageTitle>Booooks</PageTitle>
+
+<h1>Boooks</h1>
+
+<button class="btn btn-primary" @onclick="CreateDb">Create DB</button>
+<button class="btn btn-primary" @onclick="LoadBooks">Laden</button>
+<button class="btn btn-primary" @onclick="AddBook">Add book</button>
+
+@if (books == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>SubTitle</th>
+                <th>Pages</th>
+                <th>Datum</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var b in books)
+            {
+                <tr>
+                    <td>@b.Title</td>
+                    <td>@b.Subtile</td>
+                    <td>@b.PageCount</td>
+                    <td>@b.ReleaseDate</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+
+@code {
+    private Book[]? books;
+
+    BooksContext bc = new BooksContext();
+
+    void AddBook()
+    {
+        var b = new Book()
+            {
+                Title = "Spass mit Azure",
+                Subtile = "Wird aber teuer",
+                PageCount = 6,
+                ReleaseDate = DateTime.Now.AddDays(500)
+            };
+
+        bc.Books.Add(b);
+        bc.SaveChanges();
+    }
+
+    void CreateDb()
+    {
+        bc.Database.EnsureCreated();
+    }
+
+    void LoadBooks()
+    {
+        books = bc.Books.ToArray();
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+
+    }
+}
