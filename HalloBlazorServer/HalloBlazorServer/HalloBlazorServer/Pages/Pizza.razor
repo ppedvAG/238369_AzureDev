@@ -1,0 +1,67 @@
+﻿@page "/pizza"
+@using HalloBlazorServer.Data
+@using HalloBlazorServer.Model
+@using Microsoft.Azure.Cosmos
+@using Microsoft.Azure.Cosmos.Linq
+
+<PageTitle>Pizza</PageTitle>
+
+<h1>Pizza</h1>
+
+<button class="btn btn-primary" @onclick="Load">Laden</button>
+<button class="btn btn-primary" @onclick="Add">Add Pizza</button>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Preis</th>
+            <th>KCal</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var p in pizzas)
+        {
+            <tr>
+                <td>@p.Name</td>
+                <td>@p.Preis</td>
+                <td>@p.Kcal</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+@code {
+    private List<Model.Pizza> pizzas = new List<Model.Pizza>();
+    CosmosClient client = new CosmosClient("https://mycosmosdb6666666.documents.azure.com:443/", "uUKWNAwf6JfFszOHB0AdaW4dza3UhtTuEeIxxS042fX4W6iVSLncEb25b8PEAwjIOylVC4A2ZQpmACDbAZzNww==");
+
+    void Add()
+    {
+        var cont = client.GetContainer("id", "Pizza");
+        var newP = new Model.Pizza()
+            {
+                id = Guid.NewGuid().ToString(),
+                Name = "Käääse",
+                Preis = 12.90m,
+                Kcal = 900
+            };
+
+        cont.CreateItemAsync(newP).Wait();
+    }
+
+    void Load()
+    {
+        var cont = client.GetContainer("id", "Pizza");
+
+        var feed = cont.GetItemLinqQueryable<Model.Pizza>().ToFeedIterator();
+
+        while (feed.HasMoreResults)
+        {
+            foreach (var item in feed.ReadNextAsync().Result)
+            {
+                pizzas.Add(item);
+            }
+        }
+    }
+}
